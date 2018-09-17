@@ -11,7 +11,7 @@
 namespace antlr4 {
 namespace atn {
 
-  class ANTLR4CPP_PUBLIC ATNDeserializer {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ATNDeserializer {
   public:
     static const size_t SERIALIZED_VERSION;
 

@@ -11,7 +11,7 @@ namespace antlr4 {
 namespace atn {
 
   /// TO_DO: make all transitions sets? no, should remove set edges.
-  class ANTLR4CPP_PUBLIC AtomTransition final : public Transition {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC AtomTransition final : public Transition {
   public:
     /// The token type or character value; or, signifies special label.
     const size_t _label;

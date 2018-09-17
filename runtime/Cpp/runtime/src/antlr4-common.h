@@ -38,6 +38,12 @@
 #include <functional>
 
 // Defines for the Guid class and other platform dependent stuff.
+#ifdef SOUP_BUILD
+  #define ANTLR4CPP_EXPORT export
+#else
+  #define ANTLR4CPP_EXPORT
+#endif
+
 #ifdef _WIN32
   #ifdef _MSC_VER
     #pragma warning (disable: 4250) // Class inherits by dominance.
@@ -71,14 +77,14 @@
   #ifdef ANTLR4CPP_EXPORTS
     #define ANTLR4CPP_PUBLIC __declspec(dllexport)
   #else
-    #ifdef ANTLR4CPP_STATIC
+    #if defined(ANTLR4CPP_STATIC) || defined(SOUP_BUILD)
       #define ANTLR4CPP_PUBLIC
     #else
       #define ANTLR4CPP_PUBLIC __declspec(dllimport)
     #endif
   #endif
 
-  class ANTLR4CPP_PUBLIC std::exception; // Needed for VS 2015.
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC std::exception; // Needed for VS 2015.
 
 #elif defined(__APPLE__)
   typedef std::u32string UTF32String;

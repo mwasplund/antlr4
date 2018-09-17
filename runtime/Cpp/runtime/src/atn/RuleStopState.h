@@ -14,7 +14,7 @@ namespace atn {
   /// In that case, there is one transition to EOF. Later, we might encode
   /// references to all calls to this rule to compute FOLLOW sets for
   /// error handling.
-  class ANTLR4CPP_PUBLIC RuleStopState final : public ATNState {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC RuleStopState final : public ATNState {
 
   public:
     virtual size_t getStateType() override;

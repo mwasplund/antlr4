@@ -11,7 +11,7 @@ namespace antlr4 {
 namespace atn {
 
   /// Terminal node of a simple {@code (a|b|c)} block.
-  class ANTLR4CPP_PUBLIC BlockEndState final : public ATNState {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC BlockEndState final : public ATNState {
   public:
     BlockStartState *startState = nullptr;
 

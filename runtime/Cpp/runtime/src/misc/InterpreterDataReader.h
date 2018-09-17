@@ -22,7 +22,7 @@ namespace misc {
   };
 
   // A class to read plain text interpreter data produced by ANTLR.
-  class ANTLR4CPP_PUBLIC InterpreterDataReader {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC InterpreterDataReader {
   public:
     static InterpreterData parseFile(std::string const& fileName);
   };

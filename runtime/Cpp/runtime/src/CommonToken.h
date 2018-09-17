@@ -9,7 +9,7 @@
 
 namespace antlr4 {
 
-  class ANTLR4CPP_PUBLIC CommonToken : public WritableToken {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC CommonToken : public WritableToken {
   protected:
     /**
      * An empty {@link Pair} which is used as the default value of

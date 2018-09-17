@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace tree {
 
-  class ANTLR4CPP_PUBLIC TerminalNode : public ParseTree {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC TerminalNode : public ParseTree {
   public:
     ~TerminalNode() override;
 

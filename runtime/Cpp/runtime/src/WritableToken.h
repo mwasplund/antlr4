@@ -9,7 +9,7 @@
 
 namespace antlr4 {
 
-  class ANTLR4CPP_PUBLIC WritableToken : public Token {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC WritableToken : public Token {
   public:
     virtual ~WritableToken();
     virtual void setText(const std::string &text) = 0;

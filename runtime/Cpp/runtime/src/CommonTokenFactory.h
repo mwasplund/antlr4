@@ -13,7 +13,7 @@ namespace antlr4 {
    * This default implementation of {@link TokenFactory} creates
    * {@link CommonToken} objects.
    */
-  class ANTLR4CPP_PUBLIC CommonTokenFactory : public TokenFactory<CommonToken> {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC CommonTokenFactory : public TokenFactory<CommonToken> {
   public:
     /**
      * The default {@link CommonTokenFactory} instance.

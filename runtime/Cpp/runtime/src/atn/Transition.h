@@ -23,7 +23,7 @@ namespace atn {
   ///  the states. We'll use the term Edge for the DFA to distinguish them from
   ///  ATN transitions.
   /// </summary>
-  class ANTLR4CPP_PUBLIC Transition {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC Transition {
   public:
     // constants for serialization
     enum SerializationType {

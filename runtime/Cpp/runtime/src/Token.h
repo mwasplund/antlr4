@@ -12,7 +12,7 @@ namespace antlr4 {
   /// A token has properties: text, type, line, character position in the line
   /// (so we can ignore tabs), token channel, index, and source from which
   /// we obtained this token.
-  class ANTLR4CPP_PUBLIC Token {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC Token {
   public:
     static const size_t INVALID_TYPE = 0;
 

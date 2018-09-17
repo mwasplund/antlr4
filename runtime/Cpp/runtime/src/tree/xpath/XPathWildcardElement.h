@@ -11,7 +11,7 @@ namespace antlr4 {
 namespace tree {
 namespace xpath {
 
-  class ANTLR4CPP_PUBLIC XPathWildcardElement : public XPathElement {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC XPathWildcardElement : public XPathElement {
   public:
     XPathWildcardElement();
 

@@ -11,7 +11,7 @@ namespace antlr4 {
 namespace atn {
 
   /// Mark the end of a * or + loop.
-  class ANTLR4CPP_PUBLIC LoopEndState final : public ATNState {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC LoopEndState final : public ATNState {
   public:
     ATNState *loopBackState = nullptr;
 

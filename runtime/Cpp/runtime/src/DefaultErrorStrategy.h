@@ -14,7 +14,7 @@ namespace antlr4 {
    * This is the default implementation of {@link ANTLRErrorStrategy} used for
    * error reporting and recovery in ANTLR parsers.
    */
-  class ANTLR4CPP_PUBLIC DefaultErrorStrategy : public ANTLRErrorStrategy {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC DefaultErrorStrategy : public ANTLRErrorStrategy {
   public:
     DefaultErrorStrategy();
     DefaultErrorStrategy(DefaultErrorStrategy const& other) = delete;

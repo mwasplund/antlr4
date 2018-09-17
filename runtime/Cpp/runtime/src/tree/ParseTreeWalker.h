@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace tree {
 
-  class ANTLR4CPP_PUBLIC ParseTreeWalker {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParseTreeWalker {
   public:
     static ParseTreeWalker &DEFAULT;
 

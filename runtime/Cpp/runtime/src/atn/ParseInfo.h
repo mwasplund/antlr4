@@ -14,7 +14,7 @@ namespace atn {
 
   /// This class provides access to specific and aggregate statistics gathered
   /// during profiling of a parser.
-  class ANTLR4CPP_PUBLIC ParseInfo {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParseInfo {
   public:
     ParseInfo(ProfilingATNSimulator *atnSimulator);
     ParseInfo(ParseInfo const&) = default;

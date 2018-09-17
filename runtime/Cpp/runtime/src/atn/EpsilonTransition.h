@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace atn {
 
-  class ANTLR4CPP_PUBLIC EpsilonTransition final : public Transition {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC EpsilonTransition final : public Transition {
   public:
     EpsilonTransition(ATNState *target);
     EpsilonTransition(ATNState *target, size_t outermostPrecedenceReturn);

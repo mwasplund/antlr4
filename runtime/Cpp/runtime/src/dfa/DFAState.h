@@ -35,7 +35,7 @@ namespace dfa {
   ///  but with different ATN contexts (with same or different alts)
   ///  meaning that state was reached via a different set of rule invocations.
   /// </summary>
-  class ANTLR4CPP_PUBLIC DFAState {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC DFAState {
   public:
     class PredPrediction {
     public:

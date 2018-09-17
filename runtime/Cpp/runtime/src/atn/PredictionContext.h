@@ -18,7 +18,7 @@ namespace atn {
 
   typedef std::unordered_set<Ref<PredictionContext>, PredictionContextHasher, PredictionContextComparer> PredictionContextCache;
 
-  class ANTLR4CPP_PUBLIC PredictionContext {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC PredictionContext {
   public:
     /// Represents $ in local context prediction, which means wildcard.
     /// *+x = *.

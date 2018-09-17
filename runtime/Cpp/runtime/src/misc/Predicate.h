@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace misc {
 
-  class ANTLR4CPP_PUBLIC Predicate {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC Predicate {
   public:
     virtual ~Predicate();
 

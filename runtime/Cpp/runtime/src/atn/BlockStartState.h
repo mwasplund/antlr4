@@ -11,7 +11,7 @@ namespace antlr4 {
 namespace atn {
 
   ///  The start of a regular {@code (...)} block.
-  class ANTLR4CPP_PUBLIC BlockStartState : public DecisionState {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC BlockStartState : public DecisionState {
   public:
     ~BlockStartState();
     BlockEndState *endState = nullptr;

@@ -11,7 +11,7 @@
 namespace antlr4 {
 namespace atn {
 
-  class ANTLR4CPP_PUBLIC OrderedATNConfigSet : public ATNConfigSet {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC OrderedATNConfigSet : public ATNConfigSet {
   protected:
     virtual size_t getHash(ATNConfig *c) override;
   };

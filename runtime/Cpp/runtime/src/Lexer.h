@@ -16,7 +16,7 @@ namespace antlr4 {
   /// lexer grammars result in a subclass of this object. A Lexer object
   /// uses simplified match() and error recovery mechanisms in the interest
   /// of speed.
-  class ANTLR4CPP_PUBLIC Lexer : public Recognizer, public TokenSource {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC Lexer : public Recognizer, public TokenSource {
   public:
     static const size_t DEFAULT_MODE = 0;
     static const size_t MORE = static_cast<size_t>(-2);

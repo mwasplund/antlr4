@@ -24,7 +24,7 @@ namespace atn {
   /// @author Sam Harwell
   /// @since 4.2
   /// </summary>
-  class ANTLR4CPP_PUBLIC LexerCustomAction final : public LexerAction {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC LexerCustomAction final : public LexerAction {
   public:
     /// <summary>
     /// Constructs a custom lexer action with the specified rule and action
