@@ -3,9 +3,13 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "support/StringUtils.h"
 
 #include "ANTLRFileStream.h"
+#endif
 
 using namespace antlr4;
 
