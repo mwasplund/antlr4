@@ -5,6 +5,8 @@
 
 #pragma once
 
+#define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
+
 #include <algorithm>
 #include <assert.h>
 #include <atomic>
@@ -84,7 +86,10 @@
     #endif
   #endif
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC std::exception; // Needed for VS 2015.
+  namespace std 
+  {
+    ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC exception; // Needed for VS 2015.
+  }
 
 #elif defined(__APPLE__)
   typedef std::u32string UTF32String;
