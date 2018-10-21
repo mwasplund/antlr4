@@ -9,7 +9,7 @@
 
 namespace antlr4 {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC UnbufferedTokenStream : public TokenStream {
+  class ANTLR4CPP_PUBLIC UnbufferedTokenStream : public TokenStream {
   public:
     UnbufferedTokenStream(TokenSource *tokenSource);
     UnbufferedTokenStream(TokenSource *tokenSource, int bufferSize);

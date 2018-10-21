@@ -21,7 +21,7 @@ namespace tree {
    *
    * 		https://github.com/antlr/antlr4/issues/841
    */
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParseTreeListener {
+  class ANTLR4CPP_PUBLIC ParseTreeListener {
   public:
     virtual ~ParseTreeListener();
 

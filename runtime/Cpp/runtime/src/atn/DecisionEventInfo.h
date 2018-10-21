@@ -25,7 +25,7 @@ namespace atn {
   ///
   /// @since 4.3
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC DecisionEventInfo {
+  class ANTLR4CPP_PUBLIC DecisionEventInfo {
   public:
     /// <summary>
     /// The invoked decision number which this event is related to.

@@ -27,7 +27,7 @@ namespace antlr4 {
   ///
   ///  See TestParserInterpreter for examples.
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParserInterpreter : public Parser {
+  class ANTLR4CPP_PUBLIC ParserInterpreter : public Parser {
   public:
     // @deprecated
     ParserInterpreter(const std::string &grammarFileName, const std::vector<std::string>& tokenNames,

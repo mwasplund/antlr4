@@ -242,7 +242,7 @@ namespace atn {
    * both SLL and LL parsing. Erroneous input will therefore require 2 passes over
    * the input.</p>
    */
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParserATNSimulator : public ATNSimulator {
+  class ANTLR4CPP_PUBLIC ParserATNSimulator : public ATNSimulator {
   public:
     /// Testing only!
     ParserATNSimulator(const ATN &atn, std::vector<dfa::DFA> &decisionToDFA,

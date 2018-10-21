@@ -16,7 +16,7 @@ namespace atn {
   ///  the tree of semantic predicates encountered before reaching
   ///  an ATN state.
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ATNConfig {
+  class ANTLR4CPP_PUBLIC ATNConfig {
   public:
     struct Hasher
     {

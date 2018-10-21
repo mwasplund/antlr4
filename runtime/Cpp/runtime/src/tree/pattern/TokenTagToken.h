@@ -16,7 +16,7 @@ namespace pattern {
   /// {@code <ID>}. These tokens are created for <seealso cref="TagChunk"/> chunks where the
   /// tag corresponds to a lexer rule or token type.
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC TokenTagToken : public CommonToken {
+  class ANTLR4CPP_PUBLIC TokenTagToken : public CommonToken {
     /// <summary>
     /// This is the backing field for <seealso cref="#getTokenName"/>.
     /// </summary>

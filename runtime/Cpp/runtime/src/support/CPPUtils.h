@@ -33,7 +33,7 @@ namespace antlrcpp {
     bool _enabled {true};
   };
 
-  ANTLR4CPP_EXPORT ANTLR4CPP_PUBLIC FinalAction finally(std::function<void ()> f);
+  ANTLR4CPP_PUBLIC FinalAction finally(std::function<void ()> f);
 
   // Convenience functions to avoid lengthy dynamic_cast() != nullptr checks in many places.
   template <typename T1, typename T2>

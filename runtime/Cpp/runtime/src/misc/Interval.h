@@ -17,7 +17,7 @@ namespace misc {
   ssize_t symbolToNumeric(size_t v);
 
   /// An immutable inclusive interval a..b
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC Interval {
+  class ANTLR4CPP_PUBLIC Interval {
   public:
     static const Interval INVALID;
 

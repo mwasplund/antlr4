@@ -14,7 +14,7 @@ namespace antlrcpp {
 namespace antlr4 {
 
   /// How to emit recognition errors (an interface in Java).
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ANTLRErrorListener {
+  class ANTLR4CPP_PUBLIC ANTLRErrorListener {
   public:
     virtual ~ANTLRErrorListener();
 

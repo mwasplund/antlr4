@@ -16,7 +16,7 @@ namespace pattern {
   /// rule; e.g., {@code <expr>}. These tokens are created for <seealso cref="TagChunk"/>
   /// chunks where the tag corresponds to a parser rule.
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC RuleTagToken : public Token {
+  class ANTLR4CPP_PUBLIC RuleTagToken : public Token {
     /// <summary>
     /// This is the backing field for <seealso cref="#getRuleName"/>.
     /// </summary>

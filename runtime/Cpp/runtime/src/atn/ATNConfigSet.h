@@ -13,7 +13,7 @@ namespace atn {
 
   /// Specialized set that can track info about the set, with support for combining similar configurations using a
   /// graph-structured stack.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ATNConfigSet {
+  class ANTLR4CPP_PUBLIC ATNConfigSet {
   public:
     /// Track the elements as they are added to the set; supports get(i)
     std::vector<Ref<ATNConfig>> configs;

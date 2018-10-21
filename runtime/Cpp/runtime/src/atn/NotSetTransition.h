@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace atn {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC NotSetTransition final : public SetTransition {
+  class ANTLR4CPP_PUBLIC NotSetTransition final : public SetTransition {
   public:
     NotSetTransition(ATNState *target, const misc::IntervalSet &set);
 

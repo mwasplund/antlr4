@@ -15,7 +15,7 @@ namespace antlr4 {
   /// to take based upon the remaining input. It tracks the starting token
   /// of the offending input and also knows where the parser was
   /// in the various paths when the error. Reported by reportNoViableAlternative()
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC NoViableAltException : public RecognitionException {
+  class ANTLR4CPP_PUBLIC NoViableAltException : public RecognitionException {
   public:
     NoViableAltException(Parser *recognizer); // LL(1) error
     NoViableAltException(Parser *recognizer, TokenStream *input,Token *startToken,

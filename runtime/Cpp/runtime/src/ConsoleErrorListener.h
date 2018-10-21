@@ -9,7 +9,7 @@
 
 namespace antlr4 {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ConsoleErrorListener : public BaseErrorListener {
+  class ANTLR4CPP_PUBLIC ConsoleErrorListener : public BaseErrorListener {
   public:
     /**
      * Provides a default instance of {@link ConsoleErrorListener}.

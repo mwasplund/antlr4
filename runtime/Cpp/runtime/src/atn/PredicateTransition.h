@@ -16,7 +16,7 @@ namespace atn {
   ///  In the ATN, labels will always be exactly one predicate, but the DFA
   ///  may have to combine a bunch of them as it collects predicates from
   ///  multiple ATN configurations into a single DFA state.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC PredicateTransition final : public AbstractPredicateTransition {
+  class ANTLR4CPP_PUBLIC PredicateTransition final : public AbstractPredicateTransition {
   public:
     const size_t ruleIndex;
     const size_t predIndex;

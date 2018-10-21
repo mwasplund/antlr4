@@ -17,7 +17,7 @@ namespace tree {
   ///
   /// The payload is either a <seealso cref="Token"/> or a <seealso cref="RuleContext"/> object.
   // ml: This class unites 4 Java classes: RuleNode, ParseTree, SyntaxTree and Tree.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParseTree {
+  class ANTLR4CPP_PUBLIC ParseTree {
   public:
     ParseTree();
     ParseTree(ParseTree const&) = delete;
@@ -77,7 +77,7 @@ namespace tree {
   };
 
   // A class to help managing ParseTree instances without the need of a shared_ptr.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParseTreeTracker {
+  class ANTLR4CPP_PUBLIC ParseTreeTracker {
   public:
     template<typename T, typename ... Args>
     T* createInstance(Args&& ... args) {

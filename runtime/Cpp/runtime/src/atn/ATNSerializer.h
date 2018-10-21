@@ -8,7 +8,7 @@
 namespace antlr4 {
 namespace atn {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ATNSerializer {
+  class ANTLR4CPP_PUBLIC ATNSerializer {
   public:
     ATN *atn;
 

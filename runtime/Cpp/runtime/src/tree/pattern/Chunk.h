@@ -22,7 +22,7 @@ namespace pattern {
   /// chunks are converted to <seealso cref="RuleTagToken"/>, <seealso cref="TokenTagToken"/>, or the
   /// regular tokens of the text surrounding the tags.
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC Chunk {
+  class ANTLR4CPP_PUBLIC Chunk {
   public:
     Chunk() = default;
     Chunk(Chunk const&) = default;

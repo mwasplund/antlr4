@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace atn {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC StarLoopbackState final : public ATNState {
+  class ANTLR4CPP_PUBLIC StarLoopbackState final : public ATNState {
   public:
     StarLoopEntryState *getLoopEntryState();
 

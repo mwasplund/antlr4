@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace atn {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC RangeTransition final : public Transition {
+  class ANTLR4CPP_PUBLIC RangeTransition final : public Transition {
   public:
     const size_t from;
     const size_t to;

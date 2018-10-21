@@ -79,7 +79,7 @@ namespace atn {
     LL_EXACT_AMBIG_DETECTION
   };
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC PredictionModeClass {
+  class ANTLR4CPP_PUBLIC PredictionModeClass {
   public:
     /**
      * Computes the SLL prediction termination condition.

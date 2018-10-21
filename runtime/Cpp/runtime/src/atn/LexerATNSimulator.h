@@ -13,7 +13,7 @@ namespace antlr4 {
 namespace atn {
 
   /// "dup" of ParserInterpreter
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC LexerATNSimulator : public ATNSimulator {
+  class ANTLR4CPP_PUBLIC LexerATNSimulator : public ATNSimulator {
   protected:
     class SimState {
     public:

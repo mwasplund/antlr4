@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace atn {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC WildcardTransition final : public Transition {
+  class ANTLR4CPP_PUBLIC WildcardTransition final : public Transition {
   public:
     WildcardTransition(ATNState *target);
 

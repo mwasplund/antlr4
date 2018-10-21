@@ -13,7 +13,7 @@ namespace tree {
 
 namespace xpath {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC XPathElement {
+  class ANTLR4CPP_PUBLIC XPathElement {
   public:
     /// Construct element like {@code /ID} or {@code ID} or {@code /*} etc...
     ///  op is null if just node

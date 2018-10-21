@@ -25,7 +25,7 @@ namespace pattern {
   /// This class does not perform any validation on the tag or label names aside
   /// from ensuring that the tag is a non-null, non-empty string.
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC TagChunk : public Chunk {
+  class ANTLR4CPP_PUBLIC TagChunk : public Chunk {
   public:
     /// <summary>
     /// Construct a new instance of <seealso cref="TagChunk"/> using the specified tag and

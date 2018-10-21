@@ -11,7 +11,7 @@
 
 namespace antlr4 {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC LexerInterpreter : public Lexer {
+  class ANTLR4CPP_PUBLIC LexerInterpreter : public Lexer {
   public:
     // @deprecated
     LexerInterpreter(const std::string &grammarFileName, const std::vector<std::string> &tokenNames,

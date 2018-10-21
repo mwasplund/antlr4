@@ -13,7 +13,7 @@ namespace antlr4 {
 namespace tree {
 
   /// A set of utility routines useful for all kinds of ANTLR trees.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC Trees {
+  class ANTLR4CPP_PUBLIC Trees {
   public:
     /// Print out a whole tree in LISP form. getNodeText is used on the
     /// node payloads to get the text for the nodes.  Detect

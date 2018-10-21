@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace atn {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ATNDeserializationOptions {
+  class ANTLR4CPP_PUBLIC ATNDeserializationOptions {
   private:
     static ATNDeserializationOptions defaultOptions;
 

@@ -12,7 +12,7 @@ namespace antlr4 {
   /// This is an ANTLRInputStream that is loaded from a file all at once
   /// when you construct the object (or call load()).
   // TODO: this class needs testing.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ANTLRFileStream : public ANTLRInputStream {
+  class ANTLR4CPP_PUBLIC ANTLRFileStream : public ANTLRInputStream {
   protected:
     std::string _fileName; // UTF-8 encoded file name.
 

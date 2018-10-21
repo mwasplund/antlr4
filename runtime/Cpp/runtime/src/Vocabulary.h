@@ -12,7 +12,7 @@ namespace dfa {
 
   /// This class provides a default implementation of the <seealso cref="Vocabulary"/>
   /// interface.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC Vocabulary {
+  class ANTLR4CPP_PUBLIC Vocabulary {
   public:
     Vocabulary(Vocabulary const&) = default;
     virtual ~Vocabulary();

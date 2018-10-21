@@ -18,7 +18,7 @@ namespace antlr4 {
   ///
   ///  I'm only putting into Java runtime as I'm certain I'm the only one that
   ///  will really every use this.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC RuleContextWithAltNum : public ParserRuleContext {
+  class ANTLR4CPP_PUBLIC RuleContextWithAltNum : public ParserRuleContext {
   public:
     size_t altNum = 0;
 

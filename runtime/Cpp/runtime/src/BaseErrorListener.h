@@ -18,7 +18,7 @@ namespace antlr4 {
    * default implementation of each method does nothing, but can be overridden as
    * necessary.
    */
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC BaseErrorListener : public ANTLRErrorListener {
+  class ANTLR4CPP_PUBLIC BaseErrorListener : public ANTLRErrorListener {
 
     virtual void syntaxError(Recognizer *recognizer, Token * offendingSymbol, size_t line, size_t charPositionInLine,
       const std::string &msg, std::exception_ptr e) override;

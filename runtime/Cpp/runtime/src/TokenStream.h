@@ -12,7 +12,7 @@ namespace antlr4 {
   /// <summary>
   /// An <seealso cref="IntStream"/> whose symbols are <seealso cref="Token"/> instances.
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC TokenStream : public IntStream {
+  class ANTLR4CPP_PUBLIC TokenStream : public IntStream {
     /// <summary>
     /// Get the <seealso cref="Token"/> instance associated with the value returned by
     /// <seealso cref="#LA LA(k)"/>. This method has the same pre- and post-conditions as

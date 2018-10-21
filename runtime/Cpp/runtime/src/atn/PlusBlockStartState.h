@@ -14,7 +14,7 @@ namespace atn {
   /// we don't use for code generation; somebody might need it, so I'm defining
   /// it for completeness. In reality, the <seealso cref="PlusLoopbackState"/> node is the
   /// real decision-making note for {@code A+}.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC PlusBlockStartState final : public BlockStartState {
+  class ANTLR4CPP_PUBLIC PlusBlockStartState final : public BlockStartState {
   public:
     PlusLoopbackState *loopBackState = nullptr;
 

@@ -13,7 +13,7 @@
 namespace antlr4 {
 namespace atn {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC LL1Analyzer {
+  class ANTLR4CPP_PUBLIC LL1Analyzer {
   public:
     /// Special value added to the lookahead sets to indicate that we hit
     ///  a predicate during analysis if {@code seeThruPreds==false}.

@@ -12,7 +12,7 @@ namespace tree {
 namespace xpath {
 
   /// Either {@code ID} at start of path or {@code ...//ID} in middle of path.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC XPathRuleAnywhereElement : public XPathElement {
+  class ANTLR4CPP_PUBLIC XPathRuleAnywhereElement : public XPathElement {
   public:
     XPathRuleAnywhereElement(const std::string &ruleName, int ruleIndex);
 

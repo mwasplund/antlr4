@@ -19,7 +19,7 @@ namespace atn {
   /// @author Sam Harwell
   /// @since 4.2
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC LexerAction {
+  class ANTLR4CPP_PUBLIC LexerAction {
   public:
     virtual ~LexerAction();
 

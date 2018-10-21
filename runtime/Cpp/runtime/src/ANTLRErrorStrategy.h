@@ -26,7 +26,7 @@ namespace antlr4 {
   /// <p/>
   /// TO_DO: what to do about lexers
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ANTLRErrorStrategy {
+  class ANTLR4CPP_PUBLIC ANTLRErrorStrategy {
   public:
 
     /// <summary>

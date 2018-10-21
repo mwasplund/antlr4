@@ -83,7 +83,7 @@ namespace antlr4 {
    * If you don't use named rewrite streams, a "default" stream is used as the
    * first example shows.</p>
    */
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC TokenStreamRewriter {
+  class ANTLR4CPP_PUBLIC TokenStreamRewriter {
   public:
     static const std::string DEFAULT_PROGRAM_NAME;
     static const size_t PROGRAM_INIT_SIZE = 100;

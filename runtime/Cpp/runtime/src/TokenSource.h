@@ -24,7 +24,7 @@ namespace antlr4 {
   /// token. Keep lexing until you get a valid one. Just report errors and keep
   /// going, looking for a valid token.
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC TokenSource {
+  class ANTLR4CPP_PUBLIC TokenSource {
   public:
     virtual ~TokenSource();
 

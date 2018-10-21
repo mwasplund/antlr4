@@ -12,7 +12,7 @@ namespace antlr4 {
   // Vacuum all input from a stream and then treat it
   // like a string. Can also pass in a string or char[] to use.
   // Input is expected to be encoded in UTF-8 and converted to UTF-32 internally.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ANTLRInputStream : public CharStream {
+  class ANTLR4CPP_PUBLIC ANTLRInputStream : public CharStream {
   protected:
     /// The data being scanned.
     // UTF-32

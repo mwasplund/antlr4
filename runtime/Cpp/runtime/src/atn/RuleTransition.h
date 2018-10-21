@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace atn {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC RuleTransition : public Transition {
+  class ANTLR4CPP_PUBLIC RuleTransition : public Transition {
   public:
     /// Ptr to the rule definition object for this rule ref.
     const size_t ruleIndex; // no Rule object at runtime

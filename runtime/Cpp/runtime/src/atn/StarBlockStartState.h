@@ -11,7 +11,7 @@ namespace antlr4 {
 namespace atn {
 
   /// The block that begins a closure loop.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC StarBlockStartState final : public BlockStartState {
+  class ANTLR4CPP_PUBLIC StarBlockStartState final : public BlockStartState {
 
   public:
     virtual size_t getStateType() override;

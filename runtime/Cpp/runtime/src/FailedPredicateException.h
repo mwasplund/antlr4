@@ -13,7 +13,7 @@ namespace antlr4 {
   /// occurs when normally parsing the alternative just like matching a token.
   /// Disambiguating predicate evaluation occurs when we test a predicate during
   /// prediction.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC FailedPredicateException : public RecognitionException {
+  class ANTLR4CPP_PUBLIC FailedPredicateException : public RecognitionException {
   public:
     FailedPredicateException(Parser *recognizer);
     FailedPredicateException(Parser *recognizer, const std::string &predicate);

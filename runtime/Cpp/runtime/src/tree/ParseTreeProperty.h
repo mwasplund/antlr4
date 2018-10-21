@@ -26,7 +26,7 @@ namespace tree {
   /// You would make one decl (values here) in the listener and use lots of times
   /// in your event methods.
   /// </summary>
-  ANTLR4CPP_EXPORT template<typename V>
+  template<typename V>
   class ANTLR4CPP_PUBLIC ParseTreeProperty {
   public:
     virtual V get(ParseTree *node) {

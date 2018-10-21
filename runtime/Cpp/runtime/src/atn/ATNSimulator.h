@@ -13,7 +13,7 @@
 namespace antlr4 {
 namespace atn {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ATNSimulator {
+  class ANTLR4CPP_PUBLIC ATNSimulator {
   public:
     /// Must distinguish between missing edge and edge we know leads nowhere.
     static const Ref<dfa::DFAState> ERROR;

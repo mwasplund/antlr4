@@ -11,7 +11,7 @@ namespace antlr4 {
 namespace tree {
 namespace xpath {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC XPathRuleElement : public XPathElement {
+  class ANTLR4CPP_PUBLIC XPathRuleElement : public XPathElement {
   public:
     XPathRuleElement(const std::string &ruleName, size_t ruleIndex);
 

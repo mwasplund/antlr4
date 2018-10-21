@@ -20,7 +20,7 @@ namespace atn {
   /// @author Sam Harwell
   /// @since 4.2
   /// </summary>
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC LexerMoreAction final : public LexerAction {
+  class ANTLR4CPP_PUBLIC LexerMoreAction final : public LexerAction {
   public:
     /// <summary>
     /// Provides a singleton instance of this parameterless lexer action.

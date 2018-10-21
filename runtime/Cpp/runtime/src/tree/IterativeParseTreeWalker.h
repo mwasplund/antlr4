@@ -44,7 +44,7 @@ namespace tree {
    * doesn't use the thread stack but heap-based stacks. Makes it possible to
    * process deeply nested parse trees.
    */
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC IterativeParseTreeWalker : public ParseTreeWalker {
+  class ANTLR4CPP_PUBLIC IterativeParseTreeWalker : public ParseTreeWalker {
   public:
     virtual void walk(ParseTreeListener *listener, ParseTree *t) const override;
   };

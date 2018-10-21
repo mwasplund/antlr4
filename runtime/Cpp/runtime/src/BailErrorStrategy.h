@@ -37,7 +37,7 @@ namespace antlr4 {
    *
    * @see Parser#setErrorHandler(ANTLRErrorStrategy)
    */
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC BailErrorStrategy : public DefaultErrorStrategy {
+  class ANTLR4CPP_PUBLIC BailErrorStrategy : public DefaultErrorStrategy {
     /// <summary>
     /// Instead of recovering from exception {@code e}, re-throw it wrapped
     ///  in a <seealso cref="ParseCancellationException"/> so it is not caught by the

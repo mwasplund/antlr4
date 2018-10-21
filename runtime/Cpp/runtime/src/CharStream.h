@@ -11,7 +11,7 @@
 namespace antlr4 {
 
   /// A source of characters for an ANTLR lexer.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC CharStream : public IntStream {
+  class ANTLR4CPP_PUBLIC CharStream : public IntStream {
   public:
     virtual ~CharStream();
 

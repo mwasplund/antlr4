@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace tree {
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC TerminalNodeImpl : public virtual TerminalNode {
+  class ANTLR4CPP_PUBLIC TerminalNodeImpl : public virtual TerminalNode {
   public:
     Token *symbol;
 

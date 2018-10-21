@@ -12,7 +12,7 @@ namespace tree {
 namespace pattern {
 
   /// Represents the result of matching a ParseTree against a tree pattern.
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParseTreeMatch {
+  class ANTLR4CPP_PUBLIC ParseTreeMatch {
   private:
     /// This is the backing field for getTree().
     ParseTree *_tree;
