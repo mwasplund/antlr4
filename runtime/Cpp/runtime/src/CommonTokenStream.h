@@ -33,7 +33,7 @@ namespace antlr4 {
    * such a rule will not be available as part of the token stream, regardless of
    * channel.</p>
    */
-  class ANTLR4CPP_PUBLIC CommonTokenStream : public BufferedTokenStream {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC CommonTokenStream : public BufferedTokenStream {
   public:
     /**
      * Constructs a new {@link CommonTokenStream} using the specified token

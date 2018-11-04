@@ -10,7 +10,7 @@
 namespace antlr4 {
 
   // An exception hierarchy modelled loosely after java.lang.* exceptions.
-  class ANTLR4CPP_PUBLIC RuntimeException : public std::exception {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC RuntimeException : public std::exception {
   private:
     std::string _message;
   public:
@@ -19,7 +19,7 @@ namespace antlr4 {
     virtual const char* what() const NOEXCEPT override;
   };
 
-  class ANTLR4CPP_PUBLIC IllegalStateException : public RuntimeException {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC IllegalStateException : public RuntimeException {
   public:
     IllegalStateException(const std::string &msg = "") : RuntimeException(msg) {}
     IllegalStateException(IllegalStateException const&) = default;
@@ -27,7 +27,7 @@ namespace antlr4 {
     IllegalStateException& operator=(IllegalStateException const&) = default;
   };
 
-  class ANTLR4CPP_PUBLIC IllegalArgumentException : public RuntimeException {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC IllegalArgumentException : public RuntimeException {
   public:
     IllegalArgumentException(IllegalArgumentException const&) = default;
     IllegalArgumentException(const std::string &msg = "") : RuntimeException(msg) {}
@@ -35,7 +35,7 @@ namespace antlr4 {
     IllegalArgumentException& operator=(IllegalArgumentException const&) = default;
   };
 
-  class ANTLR4CPP_PUBLIC NullPointerException : public RuntimeException {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC NullPointerException : public RuntimeException {
   public:
     NullPointerException(const std::string &msg = "") : RuntimeException(msg) {}
     NullPointerException(NullPointerException const&) = default;
@@ -43,7 +43,7 @@ namespace antlr4 {
     NullPointerException& operator=(NullPointerException const&) = default;
   };
 
-  class ANTLR4CPP_PUBLIC IndexOutOfBoundsException : public RuntimeException {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC IndexOutOfBoundsException : public RuntimeException {
   public:
     IndexOutOfBoundsException(const std::string &msg = "") : RuntimeException(msg) {}
     IndexOutOfBoundsException(IndexOutOfBoundsException const&) = default;
@@ -51,7 +51,7 @@ namespace antlr4 {
     IndexOutOfBoundsException& operator=(IndexOutOfBoundsException const&) = default;
   };
 
-  class ANTLR4CPP_PUBLIC UnsupportedOperationException : public RuntimeException {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC UnsupportedOperationException : public RuntimeException {
   public:
     UnsupportedOperationException(const std::string &msg = "") : RuntimeException(msg) {}
     UnsupportedOperationException(UnsupportedOperationException const&) = default;
@@ -60,7 +60,7 @@ namespace antlr4 {
 
   };
 
-  class ANTLR4CPP_PUBLIC EmptyStackException : public RuntimeException {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC EmptyStackException : public RuntimeException {
   public:
     EmptyStackException(const std::string &msg = "") : RuntimeException(msg) {}
     EmptyStackException(EmptyStackException const&) = default;
@@ -70,7 +70,7 @@ namespace antlr4 {
 
   // IOException is not a runtime exception (in the java hierarchy).
   // Hence we have to duplicate the RuntimeException implementation.
-  class ANTLR4CPP_PUBLIC IOException : public std::exception {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC IOException : public std::exception {
   private:
     std::string _message;
 
@@ -80,7 +80,7 @@ namespace antlr4 {
     virtual const char* what() const NOEXCEPT override;
   };
 
-  class ANTLR4CPP_PUBLIC CancellationException : public IllegalStateException {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC CancellationException : public IllegalStateException {
   public:
     CancellationException(const std::string &msg = "") : IllegalStateException(msg) {}
     CancellationException(CancellationException const&) = default;
@@ -88,7 +88,7 @@ namespace antlr4 {
     CancellationException& operator=(CancellationException const&) = default;
   };
 
-  class ANTLR4CPP_PUBLIC ParseCancellationException : public CancellationException {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParseCancellationException : public CancellationException {
   public:
     ParseCancellationException(const std::string &msg = "") : CancellationException(msg) {}
     ParseCancellationException(ParseCancellationException const&) = default;

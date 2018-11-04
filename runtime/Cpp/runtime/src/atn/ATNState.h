@@ -70,9 +70,9 @@ namespace atn {
   ///
   /// <embed src="images/OptionalNonGreedy.svg" type="image/svg+xml"/>
   /// </summary>
-  class ANTLR4CPP_PUBLIC ATN;
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ATN;
 
-  class ANTLR4CPP_PUBLIC ATNState {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ATNState {
   public:
     ATNState();
     ATNState(ATNState const&) = delete;

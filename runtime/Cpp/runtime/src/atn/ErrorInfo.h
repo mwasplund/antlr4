@@ -20,7 +20,7 @@ namespace atn {
   /// <seealso cref= ANTLRErrorListener#syntaxError
   ///
   /// @since 4.3 </seealso>
-  class ANTLR4CPP_PUBLIC ErrorInfo : public DecisionEventInfo {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ErrorInfo : public DecisionEventInfo {
   public:
     /// <summary>
     /// Constructs a new instance of the <seealso cref="ErrorInfo"/> class with the

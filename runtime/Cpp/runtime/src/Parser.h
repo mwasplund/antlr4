@@ -15,7 +15,7 @@
 namespace antlr4 {
 
   /// This is all the parsing support code essentially; most of it is error recovery stuff.
-  class ANTLR4CPP_PUBLIC Parser : public Recognizer {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC Parser : public Recognizer {
   public:
 
     class TraceListener : public tree::ParseTreeListener {

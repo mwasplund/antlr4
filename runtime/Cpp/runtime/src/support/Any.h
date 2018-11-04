@@ -19,7 +19,7 @@ namespace antlrcpp {
 template<class T>
   using StorageType = typename std::decay<T>::type;
 
-struct ANTLR4CPP_PUBLIC Any
+ANTLR4CPP_EXPORT struct ANTLR4CPP_PUBLIC Any
 {
   bool isNull() const { return _ptr == nullptr; }
   bool isNotNull() const { return _ptr != nullptr; }

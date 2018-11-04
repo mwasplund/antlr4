@@ -11,7 +11,7 @@
 namespace antlr4 {
 namespace atn {
 
-  class ANTLR4CPP_PUBLIC PrecedencePredicateTransition final : public AbstractPredicateTransition {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC PrecedencePredicateTransition final : public AbstractPredicateTransition {
   public:
     const int precedence;
 

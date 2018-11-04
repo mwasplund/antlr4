@@ -18,7 +18,7 @@ namespace tree {
   /// @param <T> The return type of the visit operation. Use <seealso cref="Void"/> for
   /// operations with no return type. </param>
   // ml: no template parameter here, to avoid the need for virtual template functions. Instead we have our Any class.
-  class ANTLR4CPP_PUBLIC ParseTreeVisitor {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParseTreeVisitor {
   public:
     virtual ~ParseTreeVisitor();
 

@@ -11,7 +11,7 @@
 namespace antlr4 {
 namespace atn {
 
-  class ANTLR4CPP_PUBLIC BasicBlockStartState final : public BlockStartState {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC BasicBlockStartState final : public BlockStartState {
 
   public:
     virtual size_t getStateType() override;

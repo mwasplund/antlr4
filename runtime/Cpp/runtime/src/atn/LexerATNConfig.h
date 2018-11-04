@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace atn {
 
-  class ANTLR4CPP_PUBLIC LexerATNConfig : public ATNConfig {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC LexerATNConfig : public ATNConfig {
   public:
     LexerATNConfig(ATNState *state, int alt, Ref<PredictionContext> const& context);
     LexerATNConfig(ATNState *state, int alt, Ref<PredictionContext> const& context, Ref<LexerActionExecutor> const& lexerActionExecutor);

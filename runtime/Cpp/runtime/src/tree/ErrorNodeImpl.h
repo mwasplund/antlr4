@@ -21,7 +21,7 @@ namespace tree {
   ///  and deletion as well as during "consume until error recovery set"
   ///  upon no viable alternative exceptions.
   /// </summary>
-  class ANTLR4CPP_PUBLIC ErrorNodeImpl : public virtual TerminalNodeImpl, public virtual ErrorNode {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ErrorNodeImpl : public virtual TerminalNodeImpl, public virtual ErrorNode {
   public:
     ErrorNodeImpl(Token *token);
     ~ErrorNodeImpl() override;

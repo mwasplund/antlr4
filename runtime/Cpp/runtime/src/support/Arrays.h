@@ -9,7 +9,7 @@
 
 namespace antlrcpp {
 
-  class ANTLR4CPP_PUBLIC Arrays {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC Arrays {
   public:
 
     static std::string listToString(const std::vector<std::string> &list, const std::string &separator);

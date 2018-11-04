@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace misc {
 
-  class ANTLR4CPP_PUBLIC MurmurHash {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC MurmurHash {
 
   private:
     static const size_t DEFAULT_SEED = 0;

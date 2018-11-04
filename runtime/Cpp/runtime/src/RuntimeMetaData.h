@@ -38,7 +38,7 @@ namespace antlr4 {
   ///
   /// @since 4.3
   /// </summary>
-  class ANTLR4CPP_PUBLIC RuntimeMetaData {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC RuntimeMetaData {
   public:
     /// A compile-time constant containing the current version of the ANTLR 4
     /// runtime library.

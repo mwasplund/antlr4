@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace atn {
 
-  class ANTLR4CPP_PUBLIC ATN {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ATN {
   public:
     static const size_t INVALID_ALT_NUMBER = 0;
 

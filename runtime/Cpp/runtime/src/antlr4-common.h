@@ -40,6 +40,12 @@
 #include <functional>
 
 // Defines for the Guid class and other platform dependent stuff.
+#ifdef SOUP_BUILD
+  #define ANTLR4CPP_EXPORT export
+#else
+  #define ANTLR4CPP_EXPORT
+#endif
+
 #ifdef _WIN32
   #ifdef _MSC_VER
     #pragma warning (disable: 4250) // Class inherits by dominance.
@@ -82,7 +88,7 @@
 
   namespace std 
   {
-    class ANTLR4CPP_PUBLIC exception; // Needed for VS 2015.
+    ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC exception; // Needed for VS 2015.
   }
 
 #elif defined(__APPLE__)

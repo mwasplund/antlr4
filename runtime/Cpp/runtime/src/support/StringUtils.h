@@ -49,6 +49,6 @@ namespace antlrcpp {
   void replaceAll(std::string &str, std::string const& from, std::string const& to);
 
   // string <-> wstring conversion (UTF-16), e.g. for use with Window's wide APIs.
-  ANTLR4CPP_PUBLIC std::string ws2s(std::wstring const& wstr);
-  ANTLR4CPP_PUBLIC std::wstring s2ws(std::string const& str);
+  ANTLR4CPP_EXPORT ANTLR4CPP_PUBLIC std::string ws2s(std::wstring const& wstr);
+  ANTLR4CPP_EXPORT ANTLR4CPP_PUBLIC std::wstring s2ws(std::string const& str);
 }

@@ -13,7 +13,7 @@ namespace antlr4 {
   /// This signifies any kind of mismatched input exceptions such as
   ///  when the current input does not match the expected token.
   /// </summary>
-  class ANTLR4CPP_PUBLIC InputMismatchException : public RecognitionException {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC InputMismatchException : public RecognitionException {
   public:
     InputMismatchException(Parser *recognizer);
     InputMismatchException(InputMismatchException const&) = default;

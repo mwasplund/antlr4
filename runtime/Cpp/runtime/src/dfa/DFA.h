@@ -14,7 +14,7 @@ namespace antlrcpp {
 namespace antlr4 {
 namespace dfa {
 
-  class ANTLR4CPP_PUBLIC DFA {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC DFA {
   public:
     /// A set of all DFA states. Use a map so we can get old state back.
     /// Set only allows you to see if it's there.

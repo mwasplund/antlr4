@@ -10,7 +10,7 @@
 namespace antlr4 {
 namespace dfa {
 
-  class ANTLR4CPP_PUBLIC LexerDFASerializer : public DFASerializer {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC LexerDFASerializer : public DFASerializer {
   public:
     LexerDFASerializer(DFA *dfa);
     virtual ~LexerDFASerializer();

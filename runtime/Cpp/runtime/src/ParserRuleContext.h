@@ -33,7 +33,7 @@ namespace antlr4 {
   ///  group values such as this aggregate.  The getters/setters are there to
   ///  satisfy the superclass interface.
   /// </summary>
-  class ANTLR4CPP_PUBLIC ParserRuleContext : public RuleContext {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ParserRuleContext : public RuleContext {
   public:
     static ParserRuleContext EMPTY;
 

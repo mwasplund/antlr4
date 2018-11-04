@@ -21,7 +21,7 @@ namespace antlr4 {
    * parser, this class (with slightly more memory overhead per node) is used to
    * provide equivalent functionality.</p>
    */
-  class ANTLR4CPP_PUBLIC InterpreterRuleContext : public ParserRuleContext {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC InterpreterRuleContext : public ParserRuleContext {
   public:
     InterpreterRuleContext();
 

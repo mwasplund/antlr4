@@ -11,7 +11,7 @@
 namespace antlr4 {
 namespace atn {
 
-  class ANTLR4CPP_PUBLIC ProfilingATNSimulator : public ParserATNSimulator {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC ProfilingATNSimulator : public ParserATNSimulator {
   public:
     ProfilingATNSimulator(Parser *parser);
 

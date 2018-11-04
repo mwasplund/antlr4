@@ -21,7 +21,7 @@ namespace antlr4 {
    * {@link Token#HIDDEN_CHANNEL}, use a filtering token stream such a
    * {@link CommonTokenStream}.</p>
    */
-  class ANTLR4CPP_PUBLIC BufferedTokenStream : public TokenStream {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC BufferedTokenStream : public TokenStream {
   public:
     BufferedTokenStream(TokenSource *tokenSource);
     BufferedTokenStream(const BufferedTokenStream& other) = delete;

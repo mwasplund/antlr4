@@ -10,7 +10,7 @@
 
 namespace antlr4 {
 
-  class ANTLR4CPP_PUBLIC LexerNoViableAltException : public RecognitionException {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC LexerNoViableAltException : public RecognitionException {
   public:
     LexerNoViableAltException(Lexer *lexer, CharStream *input, size_t startIndex,
                               atn::ATNConfigSet *deadEndConfigs);

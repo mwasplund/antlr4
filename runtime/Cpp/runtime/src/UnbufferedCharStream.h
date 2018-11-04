@@ -13,7 +13,7 @@ namespace antlr4 {
   /// for efficiency and also buffers while a mark exists (set by the
   /// lookahead prediction in parser). "Unbuffered" here refers to fact
   /// that it doesn't buffer all data, not that's it's on demand loading of char.
-  class ANTLR4CPP_PUBLIC UnbufferedCharStream : public CharStream {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC UnbufferedCharStream : public CharStream {
   public:
     /// The name or source of this char stream.
     std::string name;

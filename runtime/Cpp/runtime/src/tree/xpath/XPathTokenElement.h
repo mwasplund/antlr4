@@ -11,7 +11,7 @@ namespace antlr4 {
 namespace tree {
 namespace xpath {
 
-  class ANTLR4CPP_PUBLIC XPathTokenElement : public XPathElement {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC XPathTokenElement : public XPathElement {
   public:
     XPathTokenElement(const std::string &tokenName, size_t tokenType);
 

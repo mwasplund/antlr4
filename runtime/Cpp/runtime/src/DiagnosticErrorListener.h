@@ -30,7 +30,7 @@ namespace antlr4 {
   ///
   /// @author Sam Harwell
   /// </summary>
-  class ANTLR4CPP_PUBLIC DiagnosticErrorListener : public BaseErrorListener {
+  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC DiagnosticErrorListener : public BaseErrorListener {
     /// <summary>
     /// When {@code true}, only exactly known ambiguities are reported.
     /// </summary>
