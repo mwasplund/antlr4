@@ -3,6 +3,10 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#define assert(x)
+#else
 #include "IntStream.h"
 #include "atn/OrderedATNConfigSet.h"
 #include "Token.h"
@@ -23,6 +27,7 @@
 #include "atn/EmptyPredictionContext.h"
 
 #include "atn/LexerATNSimulator.h"
+#endif
 
 #define DEBUG_ATN 0
 #define DEBUG_DFA 0

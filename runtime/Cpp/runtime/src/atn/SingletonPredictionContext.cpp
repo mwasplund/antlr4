@@ -3,9 +3,14 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#define assert(x)
+#else
 #include "atn/EmptyPredictionContext.h"
 
 #include "atn/SingletonPredictionContext.h"
+#endif
 
 using namespace antlr4::atn;
 

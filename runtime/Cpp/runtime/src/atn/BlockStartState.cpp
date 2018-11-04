@@ -3,7 +3,11 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "BlockStartState.h"
+#endif
 
 antlr4::atn::BlockStartState::~BlockStartState() {
 }

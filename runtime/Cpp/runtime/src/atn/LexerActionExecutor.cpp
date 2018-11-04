@@ -3,12 +3,16 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "misc/MurmurHash.h"
 #include "atn/LexerIndexedCustomAction.h"
 #include "support/CPPUtils.h"
 #include "support/Arrays.h"
 
 #include "atn/LexerActionExecutor.h"
+#endif
 
 using namespace antlr4;
 using namespace antlr4::atn;

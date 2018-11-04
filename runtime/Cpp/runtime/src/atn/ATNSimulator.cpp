@@ -3,6 +3,9 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "atn/ATNType.h"
 #include "atn/ATNConfigSet.h"
 #include "dfa/DFAState.h"
@@ -10,12 +13,13 @@
 #include "atn/EmptyPredictionContext.h"
 
 #include "atn/ATNSimulator.h"
+#endif
 
 using namespace antlr4;
 using namespace antlr4::dfa;
 using namespace antlr4::atn;
 
-const Ref<DFAState> ATNSimulator::ERROR = std::make_shared<DFAState>(INT32_MAX);
+const Ref<DFAState> ATNSimulator::ERROR = std::make_shared<DFAState>(std::numeric_limits<int32_t>::max());
 antlrcpp::SingleWriteMultipleReadLock ATNSimulator::_stateLock;
 antlrcpp::SingleWriteMultipleReadLock ATNSimulator::_edgeLock;
 

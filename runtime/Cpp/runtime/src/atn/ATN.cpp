@@ -3,6 +3,9 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "atn/LL1Analyzer.h"
 #include "Token.h"
 #include "atn/RuleTransition.h"
@@ -15,6 +18,7 @@
 #include "support/CPPUtils.h"
 
 #include "atn/ATN.h"
+#endif
 
 using namespace antlr4;
 using namespace antlr4::atn;
@@ -48,7 +52,7 @@ ATN::~ATN() {
 /**
  * Required to be defined (even though not used) as we have an explicit move assignment operator.
  */
-ATN& ATN::operator = (ATN &other) NOEXCEPT {
+ATN& ATN::operator = (ATN &other) noexcept {
   states = other.states;
   decisionToState = other.decisionToState;
   ruleToStartState = other.ruleToStartState;
@@ -66,7 +70,7 @@ ATN& ATN::operator = (ATN &other) NOEXCEPT {
  * Explicit move assignment operator to make this the preferred assignment. With implicit copy/move assignment
  * operators it seems the copy operator is preferred causing trouble when releasing the allocated ATNState instances.
  */
-ATN& ATN::operator = (ATN &&other) NOEXCEPT {
+ATN& ATN::operator = (ATN &&other) noexcept {
   // All source vectors are implicitly cleared by the moves.
   states = std::move(other.states);
   decisionToState = std::move(other.decisionToState);

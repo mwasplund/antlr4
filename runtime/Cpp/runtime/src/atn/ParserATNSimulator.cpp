@@ -3,6 +3,10 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#define assert(x)
+#else
 #include "dfa/DFA.h"
 #include "NoViableAltException.h"
 #include "atn/DecisionState.h"
@@ -33,6 +37,7 @@
 #include "support/Arrays.h"
 
 #include "atn/ParserATNSimulator.h"
+#endif
 
 #define DEBUG_ATN 0
 #define DEBUG_LIST_ATN_DECISIONS 0

@@ -5,7 +5,9 @@
 
 #pragma once
 
+// TODO: Warning unsafe method
 #define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <algorithm>
 #include <assert.h>
@@ -139,5 +141,10 @@
 #undef EOF
 #endif
 
+#if SOUP_BUILD
+// Allow modules to have a single definition for this global
+const size_t INVALID_INDEX = std::numeric_limits<size_t>::max();
+#else
 #define INVALID_INDEX std::numeric_limits<size_t>::max()
+#endif
 template<class T> using Ref = std::shared_ptr<T>;

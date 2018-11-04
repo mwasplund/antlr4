@@ -3,6 +3,10 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#define assert(x)
+#else
 #include "atn/EmptyPredictionContext.h"
 #include "misc/MurmurHash.h"
 #include "atn/ArrayPredictionContext.h"
@@ -13,6 +17,7 @@
 #include "support/CPPUtils.h"
 
 #include "atn/PredictionContext.h"
+#endif
 
 using namespace antlr4;
 using namespace antlr4::misc;

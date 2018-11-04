@@ -5,6 +5,7 @@
 
 #ifdef SOUP_BUILD
 module Antlr4Runtime;
+#define assert(x)
 #else
 #include "support/Arrays.h"
 #include "atn/SingletonPredictionContext.h"
