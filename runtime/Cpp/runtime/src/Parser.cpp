@@ -3,6 +3,9 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "atn/ATNDeserializationOptions.h"
 #include "tree/pattern/ParseTreePatternMatcher.h"
 #include "dfa/DFA.h"
@@ -25,6 +28,7 @@
 #include "atn/ParseInfo.h"
 
 #include "Parser.h"
+#endif
 
 using namespace antlr4;
 using namespace antlr4::atn;

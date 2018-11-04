@@ -3,6 +3,10 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#define assert(x)
+#else
 #include "dfa/DFASerializer.h"
 #include "dfa/LexerDFASerializer.h"
 #include "support/CPPUtils.h"
@@ -10,6 +14,7 @@
 #include "atn/ATNConfigSet.h"
 
 #include "dfa/DFA.h"
+#endif
 
 using namespace antlr4;
 using namespace antlr4::dfa;

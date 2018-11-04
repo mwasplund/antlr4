@@ -3,12 +3,16 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "atn/ATNConfigSet.h"
 #include "atn/SemanticContext.h"
 #include "atn/ATNConfig.h"
 #include "misc/MurmurHash.h"
 
 #include "dfa/DFAState.h"
+#endif
 
 using namespace antlr4::dfa;
 using namespace antlr4::atn;

@@ -3,6 +3,9 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "tree/pattern/ParseTreePattern.h"
 #include "tree/pattern/ParseTreeMatch.h"
 #include "tree/TerminalNode.h"
@@ -25,6 +28,7 @@
 #include "support/CPPUtils.h"
 
 #include "tree/pattern/ParseTreePatternMatcher.h"
+#endif
 
 using namespace antlr4;
 using namespace antlr4::tree;

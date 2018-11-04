@@ -22,6 +22,9 @@
  THE SOFTWARE.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "guid.h"
 
 #ifdef GUID_LIBUUID
@@ -38,6 +41,7 @@
 
 #ifdef GUID_ANDROID
 #include <jni.h>
+#endif
 #endif
 
 using namespace std;

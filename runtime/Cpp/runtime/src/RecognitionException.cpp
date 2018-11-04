@@ -3,6 +3,9 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "atn/ATN.h"
 #include "Recognizer.h"
 #include "support/StringUtils.h"
@@ -10,6 +13,7 @@
 #include "misc/IntervalSet.h"
 
 #include "RecognitionException.h"
+#endif
 
 using namespace antlr4;
 

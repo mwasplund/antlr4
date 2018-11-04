@@ -3,10 +3,14 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "tree/ParseTree.h"
 #include "Exceptions.h"
 
 #include "support/Arrays.h"
+#endif
 
 using namespace antlrcpp;
 

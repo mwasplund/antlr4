@@ -3,14 +3,18 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "Exceptions.h"
+#endif
 
 using namespace antlr4;
 
 RuntimeException::RuntimeException(const std::string &msg) : std::exception(), _message(msg) {
 }
 
-const char* RuntimeException::what() const NOEXCEPT {
+const char* RuntimeException::what() const noexcept {
   return _message.c_str();
 }
 
@@ -19,7 +23,7 @@ const char* RuntimeException::what() const NOEXCEPT {
 IOException::IOException(const std::string &msg) : std::exception(), _message(msg) {
 }
 
-const char* IOException::what() const NOEXCEPT {
+const char* IOException::what() const noexcept {
   return _message.c_str();
 }
 

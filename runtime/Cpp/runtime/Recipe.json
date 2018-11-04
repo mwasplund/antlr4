@@ -2,7 +2,7 @@
   "name": "Antlr4",
   "version": "1.0.0",
   "dependencies": [],
-  "public": "src/Module.cpp",
+  "public": "src/Module.cppm",
   "source": [
     "src/ANTLRErrorListener.cpp",
     "src/ANTLRErrorStrategy.cpp",

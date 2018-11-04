@@ -3,12 +3,16 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "misc/Interval.h"
 #include "Token.h"
 #include "RuleContext.h"
 #include "tree/ParseTreeVisitor.h"
 
 #include "tree/TerminalNodeImpl.h"
+#endif
 
 using namespace antlr4;
 using namespace antlr4::tree;

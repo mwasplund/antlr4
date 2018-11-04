@@ -3,6 +3,9 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "atn/LexerATNSimulator.h"
 #include "Exceptions.h"
 #include "misc/Interval.h"
@@ -14,6 +17,7 @@
 #include "support/StringUtils.h"
 
 #include "Lexer.h"
+#endif
 
 #define DEBUG_LEXER 0
 

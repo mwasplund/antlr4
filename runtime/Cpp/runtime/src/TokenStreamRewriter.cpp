@@ -3,12 +3,16 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "Exceptions.h"
 #include "misc/Interval.h"
 #include "Token.h"
 #include "TokenStream.h"
 
 #include "TokenStreamRewriter.h"
+#endif
 
 using namespace antlr4;
 

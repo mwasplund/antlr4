@@ -3,11 +3,16 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#define assert(x)
+#else
 #include "atn/ATN.h"
 #include "atn/ATNDeserializer.h"
 #include "Vocabulary.h"
 
 #include "misc/InterpreterDataReader.h"
+#endif
 
 using namespace antlr4::dfa;
 using namespace antlr4::atn;

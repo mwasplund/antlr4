@@ -3,7 +3,13 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "misc/MurmurHash.h"
+
+#include <stdlib.h>
+#endif
 
 using namespace antlr4::misc;
 
@@ -18,8 +24,6 @@ using namespace antlr4::misc;
 #if defined(_MSC_VER)
 
 #define FORCE_INLINE	__forceinline
-
-#include <stdlib.h>
 
 #define ROTL32(x,y)	_rotl(x,y)
 #define ROTL64(x,y)	_rotl64(x,y)

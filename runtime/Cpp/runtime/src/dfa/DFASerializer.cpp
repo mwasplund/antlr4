@@ -3,10 +3,14 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
+#ifdef SOUP_BUILD
+module Antlr4Runtime;
+#else
 #include "dfa/DFA.h"
 #include "Vocabulary.h"
 
 #include "dfa/DFASerializer.h"
+#endif
 
 using namespace antlr4::dfa;
 
@@ -30,7 +34,7 @@ std::string DFASerializer::toString() const {
   for (auto s : states) {
     for (size_t i = 0; i < s->edges.size(); i++) {
       DFAState *t = s->edges[i];
-      if (t != nullptr && t->stateNumber != INT32_MAX) {
+      if (t != nullptr && t->stateNumber != std::numeric_limits<int>::max()) {
         ss << getStateString(s);
         std::string label = getEdgeLabel(i);
         ss << "-" << label << "->" << getStateString(t) << "\n";
