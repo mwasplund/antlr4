@@ -3,7 +3,7 @@
  * can be found in the LICENSE.txt file in the project root.
  */
 
-export module Antlr4Runtime;
+export module Antlr4.Runtime;
 
 #include "ANTLRErrorListener.h"
 #include "ANTLRErrorStrategy.h"

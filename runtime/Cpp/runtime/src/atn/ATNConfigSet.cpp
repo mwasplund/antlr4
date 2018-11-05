@@ -4,7 +4,7 @@
  */
 
 #ifdef SOUP_BUILD
-module Antlr4Runtime;
+module Antlr4.Runtime;
 #else
 #include "atn/PredictionContext.h"
 #include "atn/ATNConfig.h"

@@ -4,7 +4,7 @@
  */
 
 #ifdef SOUP_BUILD
-module Antlr4Runtime;
+module Antlr4.Runtime;
 #define assert(x)
 #else
 #include "dfa/DFASerializer.h"
