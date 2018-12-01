@@ -23,12 +23,14 @@
  */
 #pragma once
 
+#ifndef SOUP_BUILD
 #include <iostream>
 #include <vector>
 #include <sstream>
 #include <string>
 #include <iomanip>
 #include <stdint.h>
+#endif
 
 #ifdef GUID_ANDROID
 #include <jni.h>

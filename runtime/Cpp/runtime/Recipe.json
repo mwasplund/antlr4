@@ -1,7 +1,9 @@
 {
   "name": "Antlr4",
   "version": "1.0.0",
-  "dependencies": [],
+  "dependencies": [
+    "D:/Repos/SoupSTL/Core/"
+  ],
   "public": "src/Module.cppm",
   "source": [
     "src/ANTLRErrorListener.cpp",

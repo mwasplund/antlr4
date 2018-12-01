@@ -9,6 +9,8 @@
 #define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
 #define _CRT_SECURE_NO_WARNINGS
 
+// Use the module std library in soup builds
+#ifndef SOUP_BUILD
 #include <algorithm>
 #include <assert.h>
 #include <atomic>
@@ -40,6 +42,7 @@
 #include <bitset>
 #include <condition_variable>
 #include <functional>
+#endif
 
 // Defines for the Guid class and other platform dependent stuff.
 #ifdef SOUP_BUILD
@@ -88,10 +91,12 @@
     #endif
   #endif
 
+  #ifndef SOUP_BUILD
   namespace std 
   {
     ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC exception; // Needed for VS 2015.
   }
+  #endif
 
 #elif defined(__APPLE__)
   typedef std::u32string UTF32String;

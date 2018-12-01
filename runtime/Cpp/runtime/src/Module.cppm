@@ -5,6 +5,8 @@
 
 export module Antlr4.Runtime;
 
+import std.core;
+
 #include "ANTLRErrorListener.h"
 #include "ANTLRErrorStrategy.h"
 #include "ANTLRFileStream.h"
