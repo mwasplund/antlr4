@@ -30,10 +30,10 @@
 #include <string>
 #include <iomanip>
 #include <stdint.h>
-#endif
 
 #ifdef GUID_ANDROID
 #include <jni.h>
+#endif
 #endif
 
 // Class to represent a GUID/UUID. Each instance acts as a wrapper around a
