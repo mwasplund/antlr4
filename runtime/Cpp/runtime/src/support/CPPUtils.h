@@ -19,7 +19,7 @@ namespace antlrcpp {
   std::string indent(const std::string &s, const std::string &indentation, bool includingFirst = true);
 
   // Using RAII + a lambda to implement a "finally" replacement.
-  struct FinalAction {
+  ANTLR4CPP_EXPORT struct FinalAction {
     FinalAction(std::function<void ()> f) : _cleanUp { f } {}
     FinalAction(FinalAction &&other) :
 	_cleanUp(std::move(other._cleanUp)), _enabled(other._enabled) {
@@ -36,12 +36,12 @@ namespace antlrcpp {
   ANTLR4CPP_EXPORT ANTLR4CPP_PUBLIC FinalAction finally(std::function<void ()> f);
 
   // Convenience functions to avoid lengthy dynamic_cast() != nullptr checks in many places.
-  template <typename T1, typename T2>
+  ANTLR4CPP_EXPORT template <typename T1, typename T2>
   inline bool is(T2 *obj) { // For pointer types.
     return dynamic_cast<typename std::add_const<T1>::type>(obj) != nullptr;
   }
 
-  template <typename T1, typename T2>
+  ANTLR4CPP_EXPORT template <typename T1, typename T2>
   inline bool is(Ref<T2> const& obj) { // For shared pointers.
     return dynamic_cast<T1 *>(obj.get()) != nullptr;
   }

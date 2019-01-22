@@ -16,7 +16,7 @@ namespace atn {
   struct PredictionContextComparer;
   class PredictionContextMergeCache;
 
-  typedef std::unordered_set<Ref<PredictionContext>, PredictionContextHasher, PredictionContextComparer> PredictionContextCache;
+  ANTLR4CPP_EXPORT typedef std::unordered_set<Ref<PredictionContext>, PredictionContextHasher, PredictionContextComparer> PredictionContextCache;
 
   ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC PredictionContext {
   public:
@@ -217,13 +217,13 @@ namespace atn {
     std::vector<std::string> toStrings(Recognizer *recognizer, const Ref<PredictionContext> &stop, int currentState);
   };
 
-  struct PredictionContextHasher {
+  ANTLR4CPP_EXPORT struct PredictionContextHasher {
     size_t operator () (const Ref<PredictionContext> &k) const {
       return k->hashCode();
     }
   };
 
-  struct PredictionContextComparer {
+  ANTLR4CPP_EXPORT struct PredictionContextComparer {
     bool operator () (const Ref<PredictionContext> &lhs, const Ref<PredictionContext> &rhs) const
     {
       if (lhs == rhs) // Object identity.
