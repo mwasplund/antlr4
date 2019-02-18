@@ -16,7 +16,7 @@
 
 namespace antlrcpp {
 
-template<class T>
+ANTLR4CPP_EXPORT template<class T>
   using StorageType = typename std::decay<T>::type;
 
 ANTLR4CPP_EXPORT struct ANTLR4CPP_PUBLIC Any
@@ -57,10 +57,19 @@ ANTLR4CPP_EXPORT struct ANTLR4CPP_PUBLIC Any
   StorageType<U>& as() {
     typedef StorageType<U> T;
 
+    if (isNull())
+    {
+      auto message = std::string("bad cast: Cannot cast empty Any to type ") + typeid(T).name();
+      throw std::bad_cast::__construct_from_string_literal(message.c_str());
+    }
+
     auto derived = dynamic_cast<Derived<T>*>(_ptr);
 
     if (!derived)
-      throw std::bad_cast();
+    {
+      auto message = std::string("bad cast: Cannot cast Any<") + _ptr->typeName() + "> to type " + typeid(T).name();
+      throw std::bad_cast::__construct_from_string_literal(message.c_str());
+    }
 
     return derived->value;
   }
@@ -102,6 +111,7 @@ private:
   struct Base {
     virtual ~Base() {};
     virtual Base* clone() const = 0;
+    virtual const char* typeName() const = 0;
   };
 
   template<typename T>
@@ -114,6 +124,11 @@ private:
 
     Base* clone() const {
       return clone<>();
+    }
+
+    const char* typeName() const
+    {
+        return typeid(T).name();
     }
 
   private:
