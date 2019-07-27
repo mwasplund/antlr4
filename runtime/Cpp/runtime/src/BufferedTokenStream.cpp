@@ -276,7 +276,7 @@ ssize_t BufferedTokenStream::previousTokenOnChannel(size_t i, size_t channel) {
     }
 
     if (i == 0)
-      break;
+      return -1;
     i--;
   }
   return i;

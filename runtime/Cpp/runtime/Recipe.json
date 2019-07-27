@@ -1,5 +1,5 @@
 {
-  "name": "Antlr4",
+  "name": "Antlr4.Runtime",
   "version": "1.0.0",
   "dependencies": [
     "D:/Repos/SoupSTL/Core/"

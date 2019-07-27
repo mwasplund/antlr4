@@ -68,6 +68,9 @@ ANTLR4CPP_EXPORT struct ANTLR4CPP_PUBLIC Any
     if (!derived)
     {
       auto message = std::string("bad cast: Cannot cast Any<") + _ptr->typeName() + "> to type " + typeid(T).name();
+      std::cout << " Cannot cast Any to type" << std::endl;
+      std::cout << _ptr->typeName() << std::endl;
+      std::cout << typeid(T).name() << std::endl;
       throw std::bad_cast::__construct_from_string_literal(message.c_str());
     }
 
