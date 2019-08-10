@@ -100,7 +100,7 @@ namespace atn {
     static std::vector<Ref<PrecedencePredicate>> filterPrecedencePredicates(const Set &collection);
   };
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC SemanticContext::Predicate : public SemanticContext {
+  class ANTLR4CPP_PUBLIC SemanticContext::Predicate : public SemanticContext {
   public:
     const size_t ruleIndex;
     const size_t predIndex;
@@ -118,7 +118,7 @@ namespace atn {
     virtual std::string toString() const override;
   };
 
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC SemanticContext::PrecedencePredicate : public SemanticContext {
+  class ANTLR4CPP_PUBLIC SemanticContext::PrecedencePredicate : public SemanticContext {
   public:
     const int precedence;
 
@@ -142,7 +142,7 @@ namespace atn {
    *
    * @since 4.3
    */
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC SemanticContext::Operator : public SemanticContext {
+  class ANTLR4CPP_PUBLIC SemanticContext::Operator : public SemanticContext {
   public:
     virtual ~Operator() override;
 
@@ -162,7 +162,7 @@ namespace atn {
    * A semantic context which is true whenever none of the contained contexts
    * is false.
    */
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC SemanticContext::AND : public SemanticContext::Operator {
+  class ANTLR4CPP_PUBLIC SemanticContext::AND : public SemanticContext::Operator {
   public:
     std::vector<Ref<SemanticContext>> opnds;
 
@@ -185,7 +185,7 @@ namespace atn {
    * A semantic context which is true whenever at least one of the contained
    * contexts is true.
    */
-  ANTLR4CPP_EXPORT class ANTLR4CPP_PUBLIC SemanticContext::OR : public SemanticContext::Operator {
+  class ANTLR4CPP_PUBLIC SemanticContext::OR : public SemanticContext::Operator {
   public:
     std::vector<Ref<SemanticContext>> opnds;
 
