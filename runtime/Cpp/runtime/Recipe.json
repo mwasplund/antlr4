@@ -5,6 +5,9 @@
     "../../../../../Dependencies/SoupSTL/Core/"
   ],
   "public": "src/Module.cppm",
+  "includePaths": [
+    "./"
+  ],
   "source": [
     "src/ANTLRErrorListener.cpp",
     "src/ANTLRErrorStrategy.cpp",
