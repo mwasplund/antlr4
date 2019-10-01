@@ -7,7 +7,6 @@
 module Antlr4.Runtime;
 #else
 #include "Any.h"
-#endif
 
 using namespace antlrcpp;
 
@@ -15,3 +14,5 @@ Any::~Any()
 {
     delete _ptr;
 }
+
+#endif

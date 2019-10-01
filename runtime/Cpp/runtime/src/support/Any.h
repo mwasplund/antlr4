@@ -11,10 +11,14 @@
 
 #ifdef _MSC_VER
   #pragma warning(push)
-  #pragma warning(disable: 4521) // 'antlrcpp::Any': multiple copy constructors specified
+  #pragma warning(disable: 4521) // 'std::any': multiple copy constructors specified
 #endif
 
 namespace antlrcpp {
+
+#ifdef SOUP_BUILD
+ANTLR4CPP_EXPORT using Any = std::any;
+#else
 
 ANTLR4CPP_EXPORT template<class T>
   using StorageType = typename std::decay<T>::type;
@@ -163,6 +167,7 @@ private:
   Any::Any(std::nullptr_t&& ) : _ptr(nullptr) {
   }
 
+#endif // !SOUP_BUILD
 
 } // namespace antlrcpp
 

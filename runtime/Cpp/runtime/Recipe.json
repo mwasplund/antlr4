@@ -6,7 +6,7 @@
   ],
   "public": "src/Module.cppm",
   "includePaths": [
-    "./"
+    "src/"
   ],
   "source": [
     "src/ANTLRErrorListener.cpp",
