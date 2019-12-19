@@ -1,8 +1,7 @@
 {
-  "name": "Antlr4.Runtime",
+  "name": "Antlr4Runtime",
   "version": "1.0.0",
   "dependencies": [
-    "../../../../../Dependencies/SoupSTL/Core/"
   ],
   "public": "src/Module.cpp",
   "includePaths": [
