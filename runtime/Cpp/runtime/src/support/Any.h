@@ -16,9 +16,6 @@
 
 namespace antlrcpp {
 
-#ifdef SOUP_BUILD
-ANTLR4CPP_EXPORT using Any = std::any;
-#else
 
 ANTLR4CPP_EXPORT template<class T>
   using StorageType = typename std::decay<T>::type;
@@ -166,8 +163,6 @@ private:
   template<> inline
   Any::Any(std::nullptr_t&& ) : _ptr(nullptr) {
   }
-
-#endif // !SOUP_BUILD
 
 } // namespace antlrcpp
 

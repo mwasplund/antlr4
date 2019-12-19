@@ -4,7 +4,7 @@
  */
 
 #ifdef SOUP_BUILD
-module Antlr4.Runtime;
+module Antlr4Runtime;
 #else
 #include "atn/LookaheadEventInfo.h"
 #endif
