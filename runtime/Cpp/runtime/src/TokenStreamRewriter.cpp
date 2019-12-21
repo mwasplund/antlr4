@@ -4,6 +4,14 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <algorithm>
+#include <iostream>
+#include <memory>
+#include <string>
+#ifdef EOF
+#undef EOF
+#endif
 module Antlr4Runtime;
 #else
 #include "Exceptions.h"

@@ -4,6 +4,10 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <iostream>
+#include <memory>
+#include <string>
 module Antlr4Runtime;
 #else
 #include "atn/ATN.h"

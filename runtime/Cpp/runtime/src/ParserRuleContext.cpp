@@ -4,6 +4,10 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <algorithm>
+#include <memory>
+#include <string>
 module Antlr4Runtime;
 #else
 #include "tree/TerminalNode.h"

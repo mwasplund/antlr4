@@ -4,6 +4,9 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <fstream>
+#include <memory>
 module Antlr4Runtime;
 #else
 #include "support/StringUtils.h"

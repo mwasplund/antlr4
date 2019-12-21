@@ -4,6 +4,10 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <algorithm>
+#include <sstream>
+#include <memory>
 module Antlr4Runtime;
 #else
 #include "atn/PredictionContext.h"

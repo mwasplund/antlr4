@@ -4,8 +4,15 @@
  */
 
 #ifdef SOUP_BUILD
-module Antlr4Runtime;
+module;
+#include <algorithm>
+#include <iostream>
+#include <memory>
+#ifdef EOF
+#undef EOF
+#endif
 #define assert(x) 
+module Antlr4Runtime;
 #else
 #include "Exceptions.h"
 #include "misc/Interval.h"

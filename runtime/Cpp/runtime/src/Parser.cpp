@@ -4,6 +4,12 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <iostream>
+#include <map>
+#include <memory>
+#include <mutex>
+#include <vector>
 module Antlr4Runtime;
 #else
 #include "atn/ATNDeserializationOptions.h"

@@ -4,6 +4,9 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <memory>
+#include <string>
 module Antlr4Runtime;
 #else
 #include "atn/EpsilonTransition.h"

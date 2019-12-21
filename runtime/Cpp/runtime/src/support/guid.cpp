@@ -23,6 +23,11 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <iomanip>
+#include <memory>
+#include <sstream>
+#include <vector>
 module Antlr4Runtime;
 #else
 #include "guid.h"

@@ -4,6 +4,13 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <algorithm>
+#include <memory>
+#include <string>
+#ifdef EOF
+#undef EOF
+#endif
 module Antlr4Runtime;
 #else
 #include "tree/pattern/ParseTreePattern.h"

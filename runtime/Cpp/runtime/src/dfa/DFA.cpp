@@ -4,6 +4,9 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <algorithm>
+#include <memory>
 module Antlr4Runtime;
 #define assert(x)
 #else

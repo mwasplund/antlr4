@@ -4,6 +4,10 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <algorithm>
+#include <chrono>
+#include <memory>
 module Antlr4Runtime;
 #else
 #include "atn/PredicateEvalInfo.h"

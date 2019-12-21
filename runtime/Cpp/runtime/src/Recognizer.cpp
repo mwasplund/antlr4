@@ -4,6 +4,12 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <map>
+#include <memory>
+#include <mutex>
+#include <string>
+#include <vector>
 module Antlr4Runtime;
 #else
 #include "ConsoleErrorListener.h"

@@ -4,6 +4,11 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <memory>
+#ifdef EOF
+#undef EOF
+#endif
 module Antlr4Runtime;
 #else
 #include "Token.h"

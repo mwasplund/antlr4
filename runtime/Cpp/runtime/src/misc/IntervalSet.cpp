@@ -4,6 +4,9 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <memory>
+#include <sstream>
 module Antlr4Runtime;
 #else
 #include "misc/MurmurHash.h"

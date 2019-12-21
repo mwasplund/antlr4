@@ -56,7 +56,8 @@ namespace antlrcpp {
   }
 
   // Get the error text from an exception pointer or the current exception.
-  std::string what(std::exception_ptr eptr = std::current_exception());
+  // TODO: MSVC bug std::string what(std::exception_ptr eptr = std::current_exception());
+  std::string what(std::exception_ptr eptr);
 
   class SingleWriteMultipleReadLock {
   public:

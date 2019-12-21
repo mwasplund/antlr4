@@ -4,6 +4,8 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <memory>
 module Antlr4Runtime;
 #else
 #include "atn/OrderedATNConfigSet.h"

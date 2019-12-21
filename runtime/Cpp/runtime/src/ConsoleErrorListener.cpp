@@ -4,6 +4,9 @@
  */
 
 #ifdef SOUP_BUILD
+module;
+#include <iostream>
+#include <memory>
 module Antlr4Runtime;
 #else
 #include "ConsoleErrorListener.h"
