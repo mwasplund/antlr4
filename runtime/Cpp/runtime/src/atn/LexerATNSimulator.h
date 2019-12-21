@@ -179,7 +179,7 @@ namespace atn {
     virtual bool evaluatePredicate(CharStream *input, size_t ruleIndex, size_t predIndex, bool speculative);
 
     virtual void captureSimState(CharStream *input, dfa::DFAState *dfaState);
-    virtual dfa::DFAState* addDFAEdge(dfa::DFAState *from, size_t t, ATNConfigSet *q);
+    dfa::DFAState* addDFAEdge(dfa::DFAState *from, size_t t, ATNConfigSet *q);
     virtual void addDFAEdge(dfa::DFAState *p, size_t t, dfa::DFAState *q);
 
     /// <summary>
