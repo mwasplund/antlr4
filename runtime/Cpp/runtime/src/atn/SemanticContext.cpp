@@ -8,6 +8,7 @@ module;
 #include <algorithm>
 #include <memory>
 #include <string>
+#include <unordered_set>
 module Antlr4Runtime;
 #else
 #include "misc/MurmurHash.h"

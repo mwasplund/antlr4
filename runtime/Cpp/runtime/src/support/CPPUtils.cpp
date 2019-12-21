@@ -5,6 +5,7 @@
 
 #ifdef SOUP_BUILD
 module;
+#include <condition_variable>
 #include <memory>
 #include <sstream>
 module Antlr4Runtime;

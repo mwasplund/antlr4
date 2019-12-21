@@ -5,6 +5,7 @@
 
 #ifdef SOUP_BUILD
 module;
+#include <map>
 #include <memory>
 module Antlr4Runtime;
 #else
